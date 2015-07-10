@@ -2,8 +2,29 @@ require 'spec_helper'
 require 'repeated_substring'
 
 RSpec.describe 'repeated_substring' do
-  it 'is an example' do
+  it 'should return ba for banana' do
     rs = RepeatedSubstring.new
     expect(rs.find_repeated_substring('banana')).to eq("an")
   end
+  
+  it 'should return bab for bablobab' do
+    rs = RepatedSubstring new
+    expect(rs.find_repeated_substring('bablobab')).to eq ("bab")
+  end 
+
+  it 'should return loo for baloolooba' do
+    rs = RepatedSubstring new
+    expect(rs.find_repeated_substring('baloolooba')).to eq ("loo")
+  end
+
+  it 'should return bab for abcdef' do
+    rs = RepatedSubstring new
+    expect(rs.find_repeated_substring('abcdef')).to eq ("NONE")
+  end
+
+  it 'should return bu for bababubu' do
+    rs = RepatedSubstring new
+    expect(rs.find_repeated_substring('bababubu')).to eq ("bu")
+  end
+
 end
