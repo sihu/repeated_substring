@@ -8,23 +8,23 @@ RSpec.describe 'repeated_substring' do
   end
   
   it 'should return bab for bablobab' do
-    rs = RepatedSubstring new
-    expect(rs.find_repeated_substring('bablobab')).to eq ("bab")
+    rs = RepeatedSubstring.new
+    expect(rs.find_repeated_substring('bablobab')).to eq("bab")
   end 
 
   it 'should return loo for baloolooba' do
-    rs = RepatedSubstring new
-    expect(rs.find_repeated_substring('baloolooba')).to eq ("loo")
+    rs = RepeatedSubstring.new
+    expect(rs.find_repeated_substring('baloolooba')).to eq("loo")
   end
 
   it 'should return bab for abcdef' do
-    rs = RepatedSubstring new
-    expect(rs.find_repeated_substring('abcdef')).to eq ("NONE")
+    rs = RepeatedSubstring.new
+    expect(rs.find_repeated_substring('abcdef')).to eq("NONE")
   end
 
   it 'should return bu for bababubu' do
-    rs = RepatedSubstring new
-    expect(rs.find_repeated_substring('bababubu')).to eq ("bu")
+    rs = RepeatedSubstring.new
+    expect(rs.find_repeated_substring('bababubu')).to eq("bu")
   end
 
 end
